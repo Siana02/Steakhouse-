@@ -304,8 +304,8 @@ header {
 
 .feature-icon {
   font-family: 'Material Symbols Outlined';
-  font-size: 5.5rem;
-  color: #8B1A10;
+  font-size: 7rem;       /* Increased size */
+  color: #D7263D;        /* Bright wine red */
   margin-bottom: 18px;
   pointer-events: none;
   user-select: none;
