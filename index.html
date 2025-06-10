@@ -14,23 +14,32 @@
 </div>
        
         <header>
-    <div class="header-left">
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-            </ul>
-        </nav>
-        <div class="header-icons">
-            <a href="#" class="icon">📞</a>
-            <a href="#" class="icon">📧</a>
-        </div>
-    </div>
-    <div class="header-right">
-        <a href="#menu" class="header-link">Menu</a>
-        <a href="#about" class="header-link">About Us</a>
-    </div>
+  <div class="header-left">
+    <!-- Hamburger nav icon -->
+    <button class="nav-toggle" aria-label="Open navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Phone icon -->
+    <a href="tel:1234567890" class="icon-link" aria-label="Call us">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+  <div class="header-right">
+    <a href="#menu" class="header-link">Menu</a>
+    <a href="#about" class="header-link">About Us</a>
+  </div>
 </header>
+<!-- Slide-out nav menu (hidden by default) -->
+<nav class="side-nav" id="sideNav">
+  <button class="close-nav" aria-label="Close navigation">&times;</button>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#menu">Signature Meals</a></li>
+    <li><a href="#drinks">Drinks</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
     <!-- About Us Section -->
     <section id="about" class="about-section">
