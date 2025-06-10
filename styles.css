@@ -11,7 +11,32 @@ body {
     background-color: #2a2a2a;
     color: #f4f4f4;
 }
-
+.popup-notification {
+    width: 100%;
+    box-sizing: border-box;
+    background: #d4af37;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 12px 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+}
+body {
+    padding-top: 56px; /* ensure content is pushed down */
+}
+@media (max-width: 500px) {
+    .popup-notification {
+        font-size: 0.95rem;
+        padding: 10px 4px;
+    }
+    body {
+        padding-top: 46px;
+    }
+}
 h1, h2, h3 {
     font-family: 'Spectral SC', serif;
 }
