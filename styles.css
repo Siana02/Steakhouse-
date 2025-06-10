@@ -720,6 +720,83 @@ header {
         font-size: 0.95rem;
     }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap');
+
+.wine-collection-section {
+  position: relative;
+  width: 100vw;
+  min-height: 70vh;
+  background: url('wine collection.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wine-collection-overlay {
+  background: rgba(24, 10, 10, 0.68);
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+}
+
+.wine-collection-heading {
+  font-family: 'Alfa Slab One', serif;
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px rgba(215,38,61,0.33);
+}
+
+.wine-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wine-list li {
+  font-family: 'Spectral SC', serif;
+  font-size: 1.7rem;
+  color: #B11226; /* Deep wine red. Try #D7263D for bright wine red */
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 6px rgba(30,0,0,0.11);
+}
+
+@media (max-width: 900px) {
+  .wine-collection-section, .wine-collection-overlay {
+    min-height: 48vh;
+    padding: 20px 4vw;
+  }
+  .wine-collection-heading {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+  .wine-list li {
+    font-size: 1.12rem;
+  }
+}
+@media (max-width: 600px) {
+  .wine-collection-section, .wine-collection-overlay {
+    min-height: 33vh;
+    padding: 12px 2vw;
+  }
+  .wine-collection-heading {
+    font-size: 1.16rem;
+  }
+  .wine-list li {
+    font-size: 0.99rem;
+    margin-bottom: 7px;
+  }
+}
 /* Footer Section */
 footer {
     background-color: #1a1a1a;
