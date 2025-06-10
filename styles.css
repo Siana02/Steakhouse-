@@ -14,8 +14,8 @@ body {
 .popup-notification {
     width: 100%;
     box-sizing: border-box;
-    background: #d4af37;
-    color: #1a1a1a;
+    background: #000;
+    color: #fff;
     text-align: center;
     padding: 12px 10px;
     font-weight: bold;
@@ -580,7 +580,7 @@ header {
     .menu-item img {
         width: 100%;
         max-width: 340px;
-        height: 220px;
+        height: 400px;
         margin: 0 auto;
     }
     .menu-description {
@@ -602,7 +602,7 @@ header {
     }
     .menu-item img {
         max-width: 98vw;
-        height: 250px;
+        height: 300px;
         object-fit: cover;
         border-radius: 12px;
         display: block;
@@ -652,7 +652,7 @@ header {
 
 .drink-item img {
     width: 300px;
-    height: 230px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     background: #222;
@@ -692,7 +692,7 @@ header {
     }
     .drink-item img {
         width: 100%;
-        max-width: 320px;
+        max-width: 350px;
         height: 120px;
         margin: 0 auto;
     }
@@ -715,7 +715,7 @@ header {
     }
     .drink-item img {
         max-width: 98vw;
-        height: 230px;
+        height: 250px;
             object-fit: cover;
         border-radius: 10px;
         display: block;
@@ -731,6 +731,7 @@ header {
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap');
 
 .wine-collection-section {
+  margin-top: 0px;
   position: relative;
   width: 100vw;
   min-height: 70vh;
