@@ -492,40 +492,128 @@ header {
         padding: 4px;
     }
 }
-/* Menu Section */
+
 .menu-section {
-    padding: 50px 20px;
+    padding: 64px 0 64px 0;
+    background: #181818; /* deep black background */
 }
 
 .menu-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #fff;
     text-align: center;
-    margin-bottom: 30px;
-    color: #d4af37;
+    margin-bottom: 42px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
 }
 
 .menu-item {
     display: flex;
-    gap: 20px;
-    margin-bottom: 30px;
+    align-items: center;
+    gap: 36px;
+    margin-bottom: 42px;
+    background: #111; /* subtle contrast */
+    border-radius: 18px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 18px rgba(215,38,61,0.08);
+    transition: transform 0.18s;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-item img {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    background: #222;
+    flex-shrink: 0;
+}
+
+.menu-description {
+    flex: 1;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 8px;
 }
 
 .menu-description h3 {
     font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 10px;
+    color: #D7263D; /* bright wine red */
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.menu-description p {
+    font-size: 1.12rem;
+    color: #eee;
+    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
 .menu-description span {
+    display: inline-block;
     font-size: 1.2rem;
-    color: #d4af37;
+    color: #fff;
+    background: #D7263D;
+    padding: 6px 22px;
+    border-radius: 32px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    box-shadow: 0 2px 8px rgba(215,38,61,0.09);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 18px;
+        padding: 20px 10px;
+    }
+    .menu-item img {
+        width: 100%;
+        max-width: 340px;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .menu-description {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-section {
+        padding: 38px 0 38px 0;
+    }
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+    .menu-item {
+        padding: 12px 4px;
+        border-radius: 10px;
+    }
+    .menu-item img {
+        max-width: 98vw;
+        height: 140px;
+    }
+    .menu-description h3 {
+        font-size: 1.17rem;
+    }
+    .menu-description p {
+        font-size: 0.97rem;
+    }
+    .menu-description span {
+        font-size: 1rem;
+        padding: 5px 16px;
+    }
 }
 
 /* Drinks Section */
