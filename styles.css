@@ -271,6 +271,68 @@ header {
   z-index: 0;
 }
 
+.features-section {
+  background: #111;
+  padding: 48px 0 40px 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.features-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  margin: 0 12px;
+  user-select: none;
+}
+.feature i {
+  color: #fff;
+  font-size: 3.2rem;
+  margin-bottom: 18px;
+  pointer-events: none; /* Not clickable */
+}
+.feature-label {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+@media (max-width: 900px) {
+  .features-wrapper {
+    gap: 32px;
+  }
+  .feature {
+    width: 130px;
+  }
+  .feature i {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .feature {
+    width: 100%;
+    max-width: 220px;
+  }
+}
 /* About Us Section */
 .about-section {
     display: flex;
