@@ -1,4 +1,4 @@
-Certainly! Here’s a detailed README.md tailored for your Steakhouse- site, covering customization, deployment, usage for business/personal purposes, and specific instructions for opening and using it for your Etsy listing. You can copy and use this as your README.md file:
+README.md file:
 
 ---
 
