@@ -108,5 +108,24 @@
         <p>📞 Call us: (123) 456-7890</p>
     </footer>
 
+    <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const sideNav = document.getElementById('sideNav');
+  const closeNav = document.querySelector('.close-nav');
+
+  navToggle.addEventListener('click', () => {
+    sideNav.classList.add('open');
+  });
+  closeNav.addEventListener('click', () => {
+    sideNav.classList.remove('open');
+  });
+  // Optional: Close nav when clicking a menu item (for single-page navigation)
+  sideNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      sideNav.classList.remove('open');
+    });
+  });
+</script>
+
 </body>
               </html>
