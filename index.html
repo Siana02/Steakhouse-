@@ -141,6 +141,19 @@
       sideNav.classList.remove('open');
     });
   });
+          // Hero button color swap
+  const bookBtn = document.getElementById('bookBtn');
+  const deliveryBtn = document.getElementById('deliveryBtn');
+
+  bookBtn.addEventListener('click', function() {
+    bookBtn.classList.add('active');
+    deliveryBtn.classList.remove('active');
+  });
+  deliveryBtn.addEventListener('click', function() {
+    deliveryBtn.classList.add('active');
+    bookBtn.classList.remove('active');
+  });
+
 </script>
 
 </body>
