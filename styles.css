@@ -352,28 +352,78 @@ header {
     max-width: 230px;
   }
 }
-/* About Us Section */
+
 .about-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #101010;
+  color: #fff;
+  padding: 80px 0 80px 0;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.about-section .text-container, .about-section .image-container {
-    width: 48%;
+.about-content {
+  flex: 1 1 320px;
+  max-width: 540px;
+  min-width: 260px;
+  padding: 0 24px;
 }
 
-.about-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.steakhouse-heading {
+  color: #D7263D;           /* Bright wine red */
+  font-size: 2.8rem;
+  margin-bottom: 28px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif; /* Ensures brand typography */
+  font-weight: 400;
 }
 
-.about-section h2 {
-    font-size: 2rem;
-    color: #d4af37;
+.about-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 18px;
 }
+
+.highlight-red {
+  color: #D7263D;           /* Bright wine red for emphasis */
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.about-image {
+  flex: 1 1 320px;
+  max-width: 540px;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+}
+.about-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(215,38,61,0.07), 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 48px 0 48px 0;
+  }
+  .about-content, .about-image {
+    max-width: 98vw;
+    padding: 0 8vw;
+  }
+  .about-image img {
+    max-width: 100%;
+  }
+}
+    
 
 /* Gallery Section */
 .gallery-section {
